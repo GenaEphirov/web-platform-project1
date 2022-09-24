@@ -7,22 +7,33 @@
 header {
   display: flex;
   position: relative;
+  justify-content: space-between;
   align-items: center;
 
+  padding: 0 135px;
   height: 70px;
   background-color: #FCEFE4;
+  
+}
+
+@media (max-width: 900px) {
+  header {
+    padding: 0 50px;
+  }
+}
+
+@media (max-width: 650px) {
+  header {
+    padding: 0 40px;
+  }
 }
 
 .header__menu {
   display: flex;
-  margin-left: 320px;
+  position: relative;
   gap: 20px;
 }
 
-.header__burger {
-  margin-left: 135px;
-}
-
-.header__logo {
-  margin-left: 457px;
+.header__menu_cart>a>svg {
+  transform: translateY(5px);
 }
